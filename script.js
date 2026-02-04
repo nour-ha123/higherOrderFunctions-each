@@ -28,11 +28,9 @@ function impairs(numbers) {
 
 // ex4
 function sommeDeTousLesÉlémentsMultipliésParQuatre (numbers) { 
-    var res = [];
+    var res = 0;
     each(numbers, function(n) {
-      if (n % 4 === 0) {
-        res.push(n);
-      }
+        res += (n*4);
     });
     return res;
 }
